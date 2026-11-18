@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiru Zone Tours | Private Chauffeur Guide & KDH Van Tours in Sri Lanka</title>
+  <meta name="description" content="Explore Sri Lanka safely and comfortably with Hirusha Chanuka. Private Toyota KDH Van (up to 7 passengers), 24/7 airport pickups & drops, and custom island-wide round tours." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emeraldDeep: '#043927',
+            emeraldMain: '#064E3B',
+            emeraldMid: '#085C45',
+            goldMain: '#D4AF37',
+            goldBright: '#EAB308',
+            goldWarm: '#D97706',
+            goldSoft: '#FEF3C7',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient-btn {
+      background: linear-gradient(135deg, #E5C158 0%, #C59B27 100%);
+    }
+    .gold-gradient-btn:hover {
+      background: linear-gradient(135deg, #F0CE69 0%, #D4AF37 100%);
+    }
+    .hero-bg {
+      background: radial-gradient(circle at 75% 45%, #0B6B50 0%, #054433 55%, #032E22 100%);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-50 bg-[#032E22]/95 backdrop-blur-md border-b border-[#D4AF37]/40 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Gold Leaf Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-full border-2 border-[#D4AF37] bg-[#064E3B] flex items-center justify-center shadow-md">
+            <svg class="w-6 h-6 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2C7 5 4 10 4 15c0 3.5 3.5 7 8 7s8-3.5 8-7c0-5-3-10-8-13z"/>
+              <path d="M12 22V7M12 13l4-3M12 16l-4-3"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block font-serif text-xl font-bold tracking-wider text-[#E5C158] leading-none">HIRU ZONE</span>
+            <span class="block text-[11px] tracking-[0.28em] text-emerald-100 uppercase mt-1 font-medium">TOURS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-white/90">
+          <a href="#home" class="nav-link text-[#E5C158] border-b-2 border-[#E5C158] pb-1 transition">Home</a>
+          <a href="#fleet" class="nav-link hover:text-[#E5C158] pb-1 transition">Our Fleet</a>
+          <a href="#tours" class="nav-link hover:text-[#E5C158] pb-1 transition">Tours</a>
+          <a href="#about" class="nav-link hover:text-[#E5C158] pb-1 transition">About Us</a>
+          <a href="#memories" class="nav-link hover:text-[#E5C158] pb-1 transition">Tour Memories</a>
+          <a href="#testimonials" class="nav-link hover:text-[#E5C158] pb-1 transition">Reviews</a>
+          <a href="#contact" class="nav-link hover:text-[#E5C158] pb-1 transition">Contact</a>
+        </nav>
+
+        <!-- Gold Book Now Button -->
+        <div class="hidden md:flex items-center">
+          <a href="#contact" class="gold-gradient-btn text-[#032E22] font-bold px-6 py-2.5 rounded-lg shadow-md transition transform hover:-translate-y-0.5 text-sm">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-[#E5C158] p-2">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#032E22] border-t border-[#D4AF37]/30 px-4 pt-3 pb-6 space-y-3 text-white">
+      <a href="#home" class="mobile-nav-link block py-2 text-[#E5C158]">Home</a>
+      <a href="#fleet" class="mobile-nav-link block py-2 hover:text-[#E5C158]">Our Fleet</a>
+      <a href="#tours" class="mobile-nav-link block py-2 hover:text-[#E5C158]">Tours</a>
+      <a href="#about" class="mobile-nav-link block py-2 hover:text-[#E5C158]">About Us</a>
+      <a href="#memories" class="mobile-nav-link block py-2 hover:text-[#E5C158]">Tour Memories</a>
+      <a href="#testimonials" class="mobile-nav-link block py-2 hover:text-[#E5C158]">Reviews</a>
+      <a href="#contact" class="mobile-nav-link block py-2 hover:text-[#E5C158]">Contact</a>
+      <a href="#contact" class="mobile-nav-link block text-center gold-gradient-btn text-[#032E22] font-bold py-2.5 rounded-lg mt-2">Book Now</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="home" class="relative hero-bg text-white overflow-hidden py-12 lg:py-16 flex items-center">
+    <svg class="hidden sm:block absolute top-4 right-0 w-72 h-72 text-[#D4AF37]/35 pointer-events-none" viewBox="0 0 200 200" fill="none">
+      <path d="M195 15 C140 35, 110 75, 85 130" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M170 28 C150 22, 135 28, 125 40 C142 42, 158 38, 170 28 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M150 48 C128 42, 112 50, 102 64 C120 65, 138 60, 150 48 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M132 72 C108 66, 92 76, 82 92 C102 92, 120 85, 132 72 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M175 45 C182 65, 178 85, 165 100 C160 80, 163 62, 175 45 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M155 70 C162 92, 156 112, 142 126 C138 106, 142 88, 155 70 Z" stroke="currentColor" stroke-width="1.4"/>
+    </svg>
+
+    <svg class="hidden sm:block absolute bottom-4 left-0 w-72 h-64 text-[#D4AF37]/35 pointer-events-none" viewBox="0 0 200 200" fill="none">
+      <path d="M5 185 C60 165, 95 130, 125 80" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M30 172 C50 178, 66 172, 76 158 C58 156, 42 162, 30 172 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M52 150 C74 156, 90 148, 100 132 C82 131, 64 138, 52 150 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M74 126 C96 130, 112 120, 122 104 C104 104, 86 112, 74 126 Z" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M25 152 C18 132, 22 112, 36 96 C40 116, 36 134, 25 152 Z" stroke="currentColor" stroke-width="1.4"/>
+    </svg>
+
+    <svg class="absolute inset-x-0 bottom-0 w-full h-32 pointer-events-none" viewBox="0 0 1440 160" fill="none" preserveAspectRatio="none">
+      <path d="M0 120 C 360 175, 720 40, 1440 95 L 1440 160 L 0 160 Z" fill="#03291E" fill-opacity="0.65"/>
+      <path d="M0 120 C 360 175, 720 40, 1440 95" stroke="#D4AF37" stroke-width="2" stroke-opacity="0.6"/>
+      <path d="M0 140 C 420 90, 960 170, 1440 115" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.35"/>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 space-y-5">
+          <div class="inline-flex items-center gap-2 bg-[#032E22]/80 border border-[#D4AF37]/40 px-4 py-1.5 rounded-full text-[#E5C158] text-xs font-semibold tracking-wide">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            <span>2+ Years Experienced Private Chauffeur Guide</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[46px] font-bold leading-[1.15] text-white">
+            Explore Sri Lanka
+            <span class="inline-flex items-center align-middle gap-1 text-[#E5C158] text-xl sm:text-2xl ml-1">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </span>
+            <br/>
+            <span class="text-white">Safely &amp; Comfortably</span>
+            <br/>
+            <span class="text-white">with <span class="text-[#E5C158]">Hirusha Chanuka</span></span>
+          </h1>
+
+          <p class="text-emerald-100/95 text-base leading-relaxed">
+            Private KDH Van Tours (Up to 7 Passengers) &bull; Airport Pickups &amp; Drops &bull; Island-Wide Round Tours
+          </p>
+
+          <div class="flex flex-wrap items-center gap-6 text-sm font-medium text-white">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-[#D4AF37] text-[#032E22] flex items-center justify-center font-bold">
+                <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
+              </span>
+              <span>Reliable &amp; Professional</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-[#D4AF37] text-[#032E22] flex items-center justify-center font-bold">
+                <i data-lucide="headset" class="w-4 h-4 stroke-[2.5]"></i>
+              </span>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="https://wa.me/94789385910?text=Hello%20Hirusha!%20I%20visited%20Hiru%20Zone%20Tours%20and%20would%20like%20to%20book%20a%20tour%20in%20Sri%20Lanka." target="_blank" class="inline-flex items-center gap-3 bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold px-7 py-3.5 rounded-xl shadow-xl shadow-black/25 transition transform hover:-translate-y-0.5 text-base">
+              <span>Book via WhatsApp</span>
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+            <a href="#tours" class="inline-flex items-center gap-2 border border-[#D4AF37]/60 hover:bg-[#D4AF37]/15 text-[#E5C158] font-semibold px-6 py-3.5 rounded-xl transition text-sm">
+              <span>Explore Tours</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 relative flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 sm:gap-0">
+          <div class="relative z-20 sm:-mr-12 sm:-mt-28 shrink-0 w-52 h-52 sm:w-64 sm:h-64 rounded-full p-2 bg-gradient-to-b from-[#E5C158] via-[#D4AF37] to-[#8A6D1B] shadow-[0_20px_50px_rgba(0,0,0,0.65)]">
+            <img src="images/hirusha-badge.png" alt="Mr. Hirusha Chanuka - Professional Chauffeur" class="w-full h-full object-cover rounded-full bg-[#032E22]">
+          </div>
+
+          <div class="relative z-10 w-full sm:w-[76%] rounded-2xl overflow-hidden border-2 border-[#D4AF37]/85 shadow-[0_25px_60px_rgba(0,0,0,0.6)] bg-[#032E22]">
+            <img src="images/sri-lanka-collage.jpg" alt="Wonder of Asia - Beautiful Sri Lanka" class="w-full h-64 sm:h-[310px] object-cover object-bottom">
+            <div class="bg-gradient-to-r from-[#032E22] via-[#064E3B] to-[#032E22] px-5 py-3 border-t border-[#D4AF37]/40 flex items-center justify-between text-xs sm:text-sm">
+              <span class="text-[#E5C158] font-bold tracking-wide uppercase">Wonder of Asia &bull; Sri Lanka</span>
+              <span class="text-white/95 font-medium">Custom Island-Wide Tours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUR FLEET SECTION ==================== -->
+  <section id="fleet" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-goldWarm font-bold uppercase tracking-widest text-xs">Our Fleet</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">Toyota KDH Luxury Van</h2>
+        <p class="text-slate-600 mt-3">Travel across Sri Lanka in a spotless, fully air-conditioned vehicle engineered for long-distance hill-country comfort, safety, and generous luggage capacity.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
+        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emeraldMain border border-emerald-200 px-4 py-2 rounded-full text-sm font-semibold">
+          <i data-lucide="users" class="w-4 h-4 text-goldWarm"></i> Up to 7 Passengers
+        </span>
+        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emeraldMain border border-emerald-200 px-4 py-2 rounded-full text-sm font-semibold">
+          <i data-lucide="snowflake" class="w-4 h-4 text-goldWarm"></i> Dual Line A/C
+        </span>
+        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emeraldMain border border-emerald-200 px-4 py-2 rounded-full text-sm font-semibold">
+          <i data-lucide="armchair" class="w-4 h-4 text-goldWarm"></i> Plush Cushioned Seats
+        </span>
+        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emeraldMain border border-emerald-200 px-4 py-2 rounded-full text-sm font-semibold">
+          <i data-lucide="briefcase" class="w-4 h-4 text-goldWarm"></i> Spacious Luggage Compartment
+        </span>
+        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emeraldMain border border-emerald-200 px-4 py-2 rounded-full text-sm font-semibold">
+          <i data-lucide="shield-check" class="w-4 h-4 text-goldWarm"></i> Full Passenger Insurance
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="images/van-exterior.jpg" alt="Toyota KDH Van Exterior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-emeraldDeep">Exterior Class</h3>
+            <p class="text-sm text-slate-600 mt-1">Well-maintained white Toyota KDH high-roof touring van built for smooth island-wide travel.</p>
+          </div>
+        </div>
+
+        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="images/van-front-seats.jpg" alt="Driver Cockpit & Safety Controls" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-emeraldDeep">Safe &amp; Modern Cockpit</h3>
+            <p class="text-sm text-slate-600 mt-1">Driven by a licensed, experienced chauffeur following strict speed and road safety standards.</p>
+          </div>
+        </div>
+
+        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="images/van-passenger-seats.jpg" alt="Plush Passenger Seats" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-emeraldDeep">Plush Interiors</h3>
+            <p class="text-sm text-slate-600 mt-1">Clean beige &amp; black cushioned seats with individual headrests, seatbelts, and generous legroom.</p>
+          </div>
+        </div>
+
+        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="h-56 overflow-hidden">
+            <img src="images/van-luggage.jpg" alt="Spacious Luggage Area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-emeraldDeep">Spacious Trunk</h3>
+            <p class="text-sm text-slate-600 mt-1">Ample rear storage space easily fitting multiple large suitcases, backpacks, and strollers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-emerald-50/70 border border-emerald-200 rounded-2xl p-6 sm:p-8 grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7 space-y-3">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emeraldMain bg-white px-3 py-1 rounded-full border border-emerald-200">
+            <i data-lucide="shield-check" class="w-4 h-4 text-goldWarm"></i> Safety &amp; Comfort First
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-emeraldDeep">Why Travel in Our Toyota KDH Van?</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Your safety and comfort are our top priorities on every mile. Our Toyota KDH van undergoes regular mechanical inspections and daily interior sanitization before every tour. With powerful dual-line air conditioning, smooth suspension for winding hill-country roads, and a calm, defensive driver who never rushes, you can relax and enjoy Sri Lanka with complete peace of mind.
+          </p>
+        </div>
+
+        <div class="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-3 text-sm">
+          <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-emerald-100">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-emeraldMain shrink-0"></i>
+            <span class="font-medium text-slate-800">100% Sanitized &amp; Smoke-Free Cabin</span>
+          </div>
+          <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-emerald-100">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-emeraldMain shrink-0"></i>
+            <span class="font-medium text-slate-800">Seatbelts for All Passengers &amp; First-Aid Kit</span>
+          </div>
+          <div class="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-emerald-100">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-emeraldMain shrink-0"></i>
+            <span class="font-medium text-slate-800">Calm, Defensive Driving on Mountain &amp; Highway Routes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#contact" class="inline-flex items-center gap-2 gold-gradient-btn text-[#032E22] font-bold px-8 py-3.5 rounded-xl shadow transition">
+          <span>Book This Vehicle</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TOURS & SERVICES + POPULAR DESTINATIONS SECTION ==================== -->
+  <section id="tours" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-goldWarm font-bold uppercase tracking-widest text-xs">Destinations &amp; Services</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">Our Tours &amp; Services</h2>
+      </div>
+
+      <div class="hero-bg text-white rounded-3xl p-8 sm:p-10 lg:p-12 border-2 border-[#D4AF37]/60 shadow-xl relative overflow-hidden">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <span class="inline-flex items-center gap-2 bg-[#032E22]/90 border border-[#D4AF37]/50 text-[#E5C158] text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Flexible, Safe &amp; Fair-Priced Travel
+            </span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
+              24/7 Airport Pickups &amp; Drops &bull; Custom Island-Wide Round Tours
+            </h3>
+            <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+              Whether you need a punctual <strong class="text-white">24/7 Airport Pickup or Drop-off</strong> at Bandaranaike International Airport (CMB), or want us to pick you up directly from the airport to begin an unforgettable <strong class="text-white">all-island round tour</strong>, we tailor every journey around your comfort and schedule. Enjoy a safe, stress-free ride with an experienced private chauffeur at <strong class="text-[#E5C158]">fair and transparent rates</strong>—reserve your tour with us today!
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm">
+              <div class="bg-[#032E22]/75 border border-[#D4AF37]/30 rounded-xl p-3.5 flex items-center gap-2.5">
+                <i data-lucide="plane-takeoff" class="w-5 h-5 text-[#E5C158] shrink-0"></i>
+                <span class="font-medium">24/7 Airport Transfers</span>
+              </div>
+              <div class="bg-[#032E22]/75 border border-[#D4AF37]/30 rounded-xl p-3.5 flex items-center gap-2.5">
+                <i data-lucide="map" class="w-5 h-5 text-[#E5C158] shrink-0"></i>
+                <span class="font-medium">Airport-to-Round Tours</span>
+              </div>
+              <div class="bg-[#032E22]/75 border border-[#D4AF37]/30 rounded-xl p-3.5 flex items-center gap-2.5">
+                <i data-lucide="shield-check" class="w-5 h-5 text-[#E5C158] shrink-0"></i>
+                <span class="font-medium">Safe Ride &amp; Fair Rates</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col items-stretch sm:items-center lg:items-end justify-center gap-3">
+            <a href="https://wa.me/94789385910?text=Hello%20Hirusha!%20I%20would%20like%20to%20book%20an%20Airport%20Transfer%20/%20Round%20Tour%20in%20Sri%20Lanka." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold px-7 py-4 rounded-xl shadow-lg transition text-sm sm:text-base">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Reserve Your Tour Today</span>
+            </a>
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 gold-gradient-btn text-[#032E22] font-bold px-7 py-3.5 rounded-xl shadow transition text-sm">
+              <span>Request a Fair Quote</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Destinations Grid -->
+      <div class="mt-16 pt-12 border-t border-slate-200/80">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-goldWarm font-bold uppercase tracking-widest text-xs">Explore Sri Lanka</span>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-emeraldDeep mt-2">Most Popular Destinations We Cover</h3>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">Pick any destinations you love—we will craft a personalized itinerary around your schedule.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-sigiriya.jpg" alt="Sigiriya Lion Rock" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Cultural Triangle</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Sigiriya Lion Rock</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Climb the iconic 5th-century ancient rock fortress with panoramic jungle views and frescoes.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Sigiriya Lion Rock')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-kandy.jpg" alt="Temple of the Sacred Tooth Relic & Kandy Lake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Kandy</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Temple of the Tooth &amp; Kandy Lake</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Visit Sri Lanka's sacred Buddhist temple, enjoy a peaceful walk around Kandy Lake, and watch Kandyan dancing.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Temple of the Tooth & Kandy Lake')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-dambulla.jpg" alt="Dambulla Cave Temple" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Heritage</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Dambulla Cave Temple</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Explore the largest, best-preserved golden rock cave temple complex filled with ancient Buddha statues.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Dambulla Cave Temple')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-ella.jpg" alt="Ella & Nine Arch Bridge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Hill Country</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Ella &amp; Nine Arch Bridge</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Witness the iconic colonial railway bridge in misty green hills, Little Adam's Peak, and Ravana Falls.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Ella & Nine Arch Bridge')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-nuwara-eliya.jpg" alt="Nuwara Eliya City & Tea Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Little England</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Nuwara Eliya City &amp; Tea Tour</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Tour lush Ceylon tea factories, Gregory Lake, Victoria Park, and the historic colonial Pink Post Office.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Nuwara Eliya City & Tea Tour')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-galle.jpg" alt="Galle Dutch Fort" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">South Coast</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Galle Dutch Fort</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Stroll along cobblestone streets, Dutch-colonial architecture, boutique cafes, and the iconic coastal lighthouse.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Galle Dutch Fort')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-yala.jpg" alt="Yala National Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Wildlife Safari</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Yala National Park</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Exciting 4x4 jeep safari spotting wild Sri Lankan leopards, sloth bears, elephants, and exotic birds.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Yala National Park Safari')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-minneriya.jpg" alt="Minneriya National Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Elephant Safari</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Minneriya National Park</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Experience "The Gathering" where hundreds of wild elephants gather around the ancient Minneriya reservoir.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Minneriya National Park')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-turtle.jpg" alt="Sea Turtle Hatchery" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Coastal Wildlife</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Sea Turtle Hatchery</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Visit Kosgoda or Bentota turtle conservation centers to see rescued sea turtles and baby hatchlings.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Sea Turtle Hatchery')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-stilt-fishing.jpg" alt="Stilt Fishing Sri Lanka" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Culture &amp; Coast</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Stilt Fishing (Koggala / Weligama)</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Capture iconic photographs of Sri Lanka's traditional stilt fishermen perched above shallow turquoise waves.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Stilt Fishing')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-sea-train.jpg" alt="Coastal Sea Train" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Scenic Ride</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Coastal Sea Train</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Enjoy a breezy ocean-side train ride along the golden southern coastline from Galle toward Colombo.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Coastal Sea Train')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-gem-museum.jpg" alt="Gem Museum & Lapidary" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Ceylon Gems</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Gem Museum &amp; Lapidary</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Discover how world-famous Ceylon Blue Sapphires and precious gemstones are mined, cut, and polished.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Gem Museum')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-pinnawala.jpg" alt="Pinnawala Elephant Orphanage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Family Favorite</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Pinnawala Elephant Orphanage</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Watch herds of rescued elephants bathing together in the Maha Oya river and enjoy bottle-feeding sessions.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Pinnawala Elephant Orphanage')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-botanic-garden.jpg" alt="Royal Botanic Gardens Peradeniya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Nature &amp; Flora</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Royal Botanic Gardens</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Wander through 147 acres of giant Javan fig trees, Royal Palm avenues, and rare tropical orchid houses.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Royal Botanic Gardens Peradeniya')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-mirissa.jpg" alt="Mirissa & Whale Watching" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Beach &amp; Ocean</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Mirissa &amp; Whale Watching</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Set sail to spot majestic Blue Whales and dolphins, or relax at Coconut Tree Hill and Secret Beach.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Mirissa & Whale Watching')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-lg transition flex flex-col">
+            <div class="h-44 overflow-hidden relative bg-slate-100">
+              <img src="images/dest-colombo.jpg" alt="Colombo City Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-emeraldDeep/85 text-[#E5C158] text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Capital City</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-emeraldDeep text-base">Colombo City Tour</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Explore Lotus Tower, Gangaramaya Temple, Independence Square, Galle Face Green, and local shopping.</p>
+              </div>
+              <a href="#contact" onclick="addPlaceToNote('Colombo City Tour')" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emeraldMain hover:text-goldWarm transition">
+                <span>Add to My Tour</span> <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section id="about" class="py-20 hero-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative max-w-sm">
+            <img src="images/hirusha-profile.jpg" alt="Mr. Hirusha Chanuka" class="rounded-2xl shadow-2xl border-2 border-[#D4AF37]">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-[#E5C158] font-bold uppercase tracking-widest text-xs">About Your Guide</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#E5C158]">Meet Your Private Chauffeur Guide</h2>
+          <p class="text-emerald-100 leading-relaxed text-base sm:text-lg">
+            Ayubowan! I am <strong class="text-white">Hirusha Chanuka</strong>, founder of <strong class="text-[#E5C158]">Hiru Zone Tours</strong>. With over 2 years of hands-on experience guiding international travelers and working alongside leading Sri Lankan tour operators, I specialize in providing safe, flexible, and stress-free private journeys across Sri Lanka.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-5 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="p-2.5 rounded-lg bg-[#032E22] border border-[#D4AF37]/40 text-[#E5C158]">
+                <i data-lucide="star" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">2+ Years of Experience</h4>
+                <p class="text-xs text-emerald-200 mt-1">Trusted by international guests from Asia, Europe, and beyond.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2.5 rounded-lg bg-[#032E22] border border-[#D4AF37]/40 text-[#E5C158]">
+                <i data-lucide="plane-landing" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Safe &amp; Punctual Airport Paging</h4>
+                <p class="text-xs text-emerald-200 mt-1">Always waiting at arrival gates with your name board, even on delayed flights.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2.5 rounded-lg bg-[#032E22] border border-[#D4AF37]/40 text-[#E5C158]">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Island-Wide Route Expertise</h4>
+                <p class="text-xs text-emerald-200 mt-1">Expert navigation through hill country roads, cultural sites, and hidden local gems.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2.5 rounded-lg bg-[#032E22] border border-[#D4AF37]/40 text-[#E5C158]">
+                <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Friendly &amp; Patient Service</h4>
+                <p class="text-xs text-emerald-200 mt-1">Stop anytime for photos, local food, or rest—your tour runs at your comfort.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/94789385910" target="_blank" class="inline-flex items-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold px-6 py-3.5 rounded-xl transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Message Hirusha on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 1: GUEST TOUR MEMORIES GALLERY (83 PHOTOS) ==================== -->
+  <section id="memories" class="py-20 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-goldWarm font-bold uppercase tracking-widest text-xs">Happy Travelers &bull; 83 Memories</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">Tour Memories &amp; Guest Moments</h2>
+        <p class="text-slate-600 mt-3">Snapshots from airport welcomes, scenic viewpoints, and unforgettable round tours with our wonderful guests. Click any photo to view full size.</p>
+      </div>
+
+      <!-- Tour Memories Grid (Populated with all 83 photos + Dynamic Admin Uploads) -->
+      <div id="tour-memories-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Show More Button for All 83 Tour Memories -->
+      <div id="memories-toggle-wrap" class="text-center mt-10">
+        <button id="toggle-memories-btn" class="inline-flex items-center gap-2 bg-emeraldMain hover:bg-emeraldDeep text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition">
+          <i data-lucide="images" class="w-5 h-5 text-[#E5C158]"></i>
+          <span id="toggle-memories-text">View All Tour Memories (83 Photos)</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: GUEST FEEDBACKS & LIVE REVIEW SUBMISSION ==================== -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div class="max-w-2xl">
+          <span class="text-goldWarm font-bold uppercase tracking-widest text-xs">Guest Reviews &amp; Evaluation Forms</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">What Our Guests Say</h2>
+          <p class="text-slate-600 mt-2">Click any evaluation form below to view it full-size, or share your own tour review.</p>
+        </div>
+        <button id="open-review-modal-btn" class="inline-flex items-center justify-center gap-2.5 bg-emeraldMain hover:bg-emeraldDeep text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition shrink-0">
+          <i data-lucide="pen-square" class="w-5 h-5 text-[#E5C158]"></i>
+          <span>Write a Review</span>
+        </button>
+      </div>
+
+      <!-- Compact Highlight Quote Banner -->
+      <div class="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-6 sm:p-7 mb-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-3xl">
+          <div class="flex items-center gap-2">
+            <span class="text-goldWarm text-base">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-emeraldMain bg-white px-2.5 py-0.5 rounded-full border border-emerald-200">100% Verified Ratings</span>
+          </div>
+          <blockquote class="font-serif text-lg sm:text-xl text-emeraldDeep italic">
+            “Our guide is very patient and nice to take us to many places to visit! He drives safely. Thank you!”
+          </blockquote>
+        </div>
+        <div class="text-xs text-slate-600 shrink-0 lg:text-right">
+          <p class="font-bold text-emeraldDeep text-sm">All Categories Rated “Excellent”</p>
+          <p class="mt-0.5">Airport Paging &bull; Vehicle Comfort &bull; Safe Driving</p>
+        </div>
+      </div>
+
+      <!-- Uniform 14 Handwritten Evaluation Forms Grid -->
+      <div class="mb-14">
+        <div class="flex items-center justify-between mb-5">
+          <h3 class="font-serif text-xl font-bold text-emeraldDeep flex items-center gap-2">
+            <i data-lucide="file-check-2" class="w-5 h-5 text-goldWarm"></i>
+            <span>Verified Handwritten Guest Evaluation Forms (14)</span>
+          </h3>
+          <span class="text-xs text-slate-500 hidden sm:inline">Click any card to read full size</span>
+        </div>
+        <div id="zip-feedback-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+      </div>
+
+      <!-- Live Dynamic Reviews -->
+      <div>
+        <h3 class="font-serif text-xl font-bold text-emeraldDeep mb-5 flex items-center gap-2">
+          <i data-lucide="message-square-heart" class="w-5 h-5 text-goldWarm"></i>
+          <span>Recent Traveler Reviews</span>
+        </h3>
+        <div id="dynamic-reviews-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== UNIVERSAL LIGHTBOX MODAL (FOR EVALUATION FORMS & TOUR MEMORIES) ==================== -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <button id="close-lightbox-btn" class="absolute top-5 right-5 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-2.5 rounded-full transition">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <button id="prev-lightbox-btn" class="absolute left-3 sm:left-6 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+    <div class="max-w-3xl w-full flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="Full Size Preview" class="max-h-[82vh] w-auto rounded-xl shadow-2xl bg-white p-1">
+      <p id="lightbox-caption" class="text-white/90 text-xs sm:text-sm mt-3 font-medium text-center"></p>
+    </div>
+    <button id="next-lightbox-btn" class="absolute right-3 sm:right-6 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition">
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- ==================== GUEST REVIEW SUBMISSION MODAL ==================== -->
+  <div id="review-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative max-h-[92vh] overflow-y-auto">
+      <button id="close-review-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-11 h-11 rounded-full bg-emeraldMain text-[#E5C158] flex items-center justify-center">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-emeraldDeep">Share Your Tour Experience</h3>
+          <p class="text-xs text-slate-500">Your review will appear live on Hiru Zone Tours</p>
+        </div>
+      </div>
+
+      <form id="public-review-form" class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Your Name *</label>
+            <input type="text" id="pub-rev-name" required placeholder="e.g., Emma & David" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Country *</label>
+            <input type="text" id="pub-rev-country" required placeholder="e.g., United Kingdom" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Your Rating *</label>
+          <select id="pub-rev-rating" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none">
+            <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5 - Excellent)</option>
+            <option value="4">&#9733;&#9733;&#9733;&#9733; (4/5 - Very Good)</option>
+            <option value="3">&#9733;&#9733;&#9733; (3/5 - Good)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Your Review *</label>
+          <textarea id="pub-rev-comment" rows="3" required placeholder="Tell future travelers about your journey with Hirusha..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Upload a Tour Photo (Optional)</label>
+          <input type="file" id="pub-rev-image" accept="image/*" class="w-full text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emeraldMain hover:file:bg-emerald-100">
+        </div>
+
+        <button type="submit" id="pub-rev-submit" class="w-full bg-emeraldMain hover:bg-emeraldDeep text-white font-bold py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Post My Review</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT & BOOK NOW SECTION ==================== -->
+  <section id="contact" class="py-20 hero-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-[#E5C158] font-bold uppercase tracking-widest text-xs">Contact &amp; Instant Quote</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Contact &amp; Book Now</h2>
+        <p class="text-emerald-100 mt-3">Let's plan your perfect Sri Lankan journey together. Send an instant inquiry directly to Hirusha on WhatsApp.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 bg-[#032E22]/85 border border-[#D4AF37]/50 p-8 rounded-2xl space-y-6">
+          <h3 class="font-serif text-2xl font-bold text-[#E5C158]">Get In Touch</h3>
+          <p class="text-sm text-emerald-100 leading-relaxed">
+            Available 24/7 for airport pickups, drop-offs, and custom Sri Lanka tour itineraries. Fast response guaranteed.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <a href="https://wa.me/94789385910" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+              <div class="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-emerald-200 uppercase">WhatsApp (24/7)</span>
+                <span class="font-bold text-lg text-white">+94 78 938 5910</span>
+              </div>
+            </a>
+
+            <a href="tel:+94760247084" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+              <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 text-[#E5C158] flex items-center justify-center">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-emerald-200 uppercase">Direct Call</span>
+                <span class="font-bold text-lg text-white">+94 76 024 7084</span>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+              <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 text-[#E5C158] flex items-center justify-center">
+                <i data-lucide="car" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="block text-xs text-emerald-200 uppercase">24/7 Airport &amp; Island-Wide Service</span>
+                <span class="font-bold text-base text-white">Toyota KDH Van (Up to 7 Pax)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-[#032E22]/85 border border-[#D4AF37]/50 text-white p-8 rounded-2xl shadow-2xl">
+          <h3 class="font-serif text-2xl font-bold text-[#E5C158] mb-6">Book Now / Instant Quote</h3>
+          
+          <form id="whatsapp-booking-form" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Your Name *</label>
+                <input type="text" id="guestName" required placeholder="e.g., John Smith" class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Service / Tour Type *</label>
+                <select id="tourType" class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+                  <option value="Airport Pickup / Drop-off">Airport Pickup / Drop-off</option>
+                  <option value="All-Island Round Tour">All-Island Round Tour</option>
+                  <option value="Airport Pickup + Round Tour">Airport Pickup + Round Tour</option>
+                  <option value="Day Excursion">Day Excursion</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Arrival / Start Date *</label>
+                <input type="date" id="arrivalDate" required class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Departure / End Date (Optional)</label>
+                <input type="date" id="departureDate" class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Passengers (Max 7) *</label>
+                <select id="passengers" class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+                  <option value="1-2 Passengers">1 – 2 Passengers</option>
+                  <option value="3-4 Passengers">3 – 4 Passengers</option>
+                  <option value="5-6 Passengers">5 – 6 Passengers</option>
+                  <option value="7 Passengers">7 Passengers</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Pickup Location / Airport</label>
+                <input type="text" id="pickupLocation" placeholder="e.g., CMB Airport / Colombo Hotel" class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-emerald-200 mb-1.5">Places to Visit / Special Notes (Optional)</label>
+              <textarea id="notes" rows="3" placeholder="e.g., Visiting Sigiriya, Kandy, Ella, and Galle. Need baby seat / flight number..." class="w-full px-4 py-3 rounded-xl bg-white text-slate-900 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E5C158] text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Send Inquiry on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#022219] border-t border-[#D4AF37]/30 text-emerald-200 py-8 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>&copy; <span id="year"></span> <strong class="text-[#E5C158]">Hiru Zone Tours</strong>. All Rights Reserved.</p>
+      <div class="flex items-center gap-4">
+        <p>Private Chauffeur Guide: <span class="text-white font-medium">Mr. Hirusha Chanuka</span></p>
+        <a href="admin.html" title="Owner Admin Portal" class="text-emerald-400/60 hover:text-[#E5C158] transition inline-flex items-center gap-1 text-xs">
+          <i data-lucide="lock" class="w-3.5 h-3.5"></i> Admin
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Active Navigation Highlight on Click & Scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function setActiveNav(id) {
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === `#${id}`) {
+          link.classList.add('text-[#E5C158]', 'border-b-2', 'border-[#E5C158]');
+        } else {
+          link.classList.remove('text-[#E5C158]', 'border-b-2', 'border-[#E5C158]');
+        }
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const targetId = link.getAttribute('href').substring(1);
+        setActiveNav(targetId);
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      let current = 'home';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      setActiveNav(current);
+    });
+
+    // Auto-add selected destination into Contact Form Note box
+    function addPlaceToNote(placeName) {
+      const notesBox = document.getElementById('notes');
+      if (!notesBox) return;
+      const current = notesBox.value.trim();
+      if (!current) {
+        notesBox.value = `Places I want to visit: ${placeName}`;
+      } else if (!current.includes(placeName)) {
+        notesBox.value = `${current}, ${placeName}`;
+      }
+    }
+
+    // Review Modal Open/Close
+    const reviewModal = document.getElementById('review-modal');
+    document.getElementById('open-review-modal-btn').addEventListener('click', () => {
+      reviewModal.classList.remove('hidden');
+    });
+    document.getElementById('close-review-modal-btn').addEventListener('click', () => {
+      reviewModal.classList.add('hidden');
+    });
+
+    // Universal Lightbox State
+    let activeGalleryList = [];
+    let currentLightboxIdx = 0;
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+
+    function openLightboxWithList(list, idx) {
+      activeGalleryList = list;
+      currentLightboxIdx = idx;
+      lightboxImg.src = activeGalleryList[idx].src;
+      lightboxCaption.textContent = activeGalleryList[idx].caption;
+      lightboxModal.classList.remove('hidden');
+    }
+
+    document.getElementById('close-lightbox-btn').addEventListener('click', () => {
+      lightboxModal.classList.add('hidden');
+    });
+    document.getElementById('prev-lightbox-btn').addEventListener('click', () => {
+      if (!activeGalleryList.length) return;
+      openLightboxWithList(activeGalleryList, (currentLightboxIdx - 1 + activeGalleryList.length) % activeGalleryList.length);
+    });
+    document.getElementById('next-lightbox-btn').addEventListener('click', () => {
+      if (!activeGalleryList.length) return;
+      openLightboxWithList(activeGalleryList, (currentLightboxIdx + 1) % activeGalleryList.length);
+    });
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) lightboxModal.classList.add('hidden');
+    });
+
+    // ==================== ALL 83 TOUR MEMORIES GALLERY (images/Tour Memories/) ====================
+    const tourMemoryFilenames = [
+      "WhatsApp Image 2026-11-18 at 15.59.44.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.04.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.08 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.08.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.09 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.09 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.09.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.10 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.10.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.11 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.11 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.11.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.12 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.12 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.12.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.13 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.13 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.13.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.14 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.14.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.15 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.15.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.16 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.16 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.16.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.17 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.17.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.18 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.18 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.18.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.19 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.19 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.19.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.20 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.20.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.21 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.21 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.21.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.22.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.47.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.48 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.48.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.53 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.53.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.54 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.54 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.54.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.55 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.55 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.55.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.56 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.56 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.56.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.57 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.57.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.58 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.58 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.58.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.59 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.59 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.00.59.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.01.00 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.01.00 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.01.00.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.01.01 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.01.01.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.51 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.51.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.52 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.52 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.52.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.53 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.53 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.53.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.54 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.54 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.54.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.55 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.55 (2).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.55.jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.56 (1).jpeg",
+      "WhatsApp Image 2026-11-18 at 16.02.56.jpeg"
+    ];
+
+    const allTourMemoryItems = [
+      {
+        src: "images/airport-welcome.jpg",
+        badge: "CMB Airport Welcome",
+        title: "Warm Arrival Greeting",
+        desc: "Welcoming our international guests at Bandaranaike International Airport to begin their Sri Lanka adventure.",
+        caption: "Tour Memory #1 of 83 — Warm Arrival Greeting at CMB Airport"
+      },
+      ...tourMemoryFilenames.map((file, i) => ({
+        src: `images/Tour Memories/${file}`,
+        badge: "Sri Lanka Tour",
+        title: `Guest Tour Moment #${i + 2}`,
+        desc: "Memorable moments exploring Sri Lanka's scenic landmarks and culture with Hirusha.",
+        caption: `Tour Memory #${i + 2} of 83 — Hiru Zone Tours Sri Lanka`
+      }))
+    ];
+
+    const memoriesGrid = document.getElementById('tour-memories-grid');
+    let showAllMemories = false;
+
+    function renderAllTourMemories() {
+      memoriesGrid.innerHTML = "";
+      const visibleCount = showAllMemories ? allTourMemoryItems.length : 9;
+
+      allTourMemoryItems.slice(0, visibleCount).forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = "cursor-pointer group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col";
+        card.innerHTML = `
+          <div class="h-64 overflow-hidden relative bg-slate-100">
+            <img src="${item.src}" loading="lazy" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute bottom-2.5 right-2.5 bg-emeraldDeep/80 text-white text-[11px] px-2.5 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition">Click to Enlarge</span>
+          </div>
+          <div class="p-5 flex-1">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emeraldMain bg-emerald-50 px-2.5 py-1 rounded-full">${item.badge}</span>
+            <h3 class="font-bold text-lg text-emeraldDeep mt-2">${item.title}</h3>
+            <p class="text-sm text-slate-600 mt-1">${item.desc}</p>
+          </div>
+        `;
+        card.addEventListener('click', () => openLightboxWithList(allTourMemoryItems, idx));
+        memoriesGrid.appendChild(card);
+      });
+    }
+
+    renderAllTourMemories();
+
+    document.getElementById('toggle-memories-btn').addEventListener('click', () => {
+      showAllMemories = !showAllMemories;
+      renderAllTourMemories();
+      document.getElementById('toggle-memories-text').textContent = showAllMemories
+        ? "Show Fewer Photos"
+        : `View All Tour Memories (${allTourMemoryItems.length} Photos)`;
+      if (!showAllMemories) {
+        document.getElementById('memories').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // ==================== 14 HANDWRITTEN EVALUATION FORMS ====================
+    const allEvaluationForms = [
+      "images/feedback-form.jpg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 11.58.54.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.00.15.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.00.51.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.01.28 (1).jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.01.28 (2).jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.01.28.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.01.59.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.02.10.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.02.37.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.03.03.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.03.45.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.04.59.jpeg",
+      "images/feedback/WhatsApp Image 2026-11-18 at 12.05.38.jpeg"
+    ];
+
+    const evaluationLightboxList = allEvaluationForms.map((src, idx) => ({
+      src,
+      caption: `Verified Guest Evaluation Form #${idx + 1} of ${allEvaluationForms.length}`
+    }));
+
+    const zipGrid = document.getElementById('zip-feedback-grid');
+    allEvaluationForms.forEach((imgPath, idx) => {
+      const card = document.createElement('div');
+      card.className = "cursor-pointer group bg-slate-50 rounded-xl overflow-hidden border border-[#D4AF37]/50 shadow-sm hover:shadow-md hover:border-emeraldMain transition p-2 flex flex-col";
+      card.innerHTML = `
+        <div class="h-44 bg-white rounded-lg overflow-hidden border border-slate-200 relative">
+          <img src="${imgPath}" loading="lazy" alt="Verified Guest Evaluation #${idx + 1}" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-1.5 right-1.5 bg-emeraldDeep/80 text-white text-[10px] px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition">Click to Zoom</span>
+        </div>
+        <div class="pt-2 px-1 flex items-center justify-between text-[11px]">
+          <span class="font-bold text-emeraldMain">Evaluation #${idx + 1}</span>
+          <span class="text-goldWarm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+      `;
+      card.addEventListener('click', () => openLightboxWithList(evaluationLightboxList, idx));
+      zipGrid.appendChild(card);
+    });
+
+    // ==================== WHATSAPP BOOKING FORM HANDLER (FIXED ENCODING) ====================
+    document.getElementById('whatsapp-booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('guestName').value.trim();
+      const tourType = document.getElementById('tourType').value;
+      const arrivalDate = document.getElementById('arrivalDate').value;
+      const departureDate = document.getElementById('departureDate').value;
+      const passengers = document.getElementById('passengers').value;
+      const pickupLocation = document.getElementById('pickupLocation').value.trim();
+      const notes = document.getElementById('notes').value.trim();
+
+      const rawMessage =
+        `Hello Hirusha! I would like to request a quote from *Hiru Zone Tours*:\n\n` +
+        `*Name:* ${name}\n` +
+        `*Service:* ${tourType}\n` +
+        `*Arrival / Start Date:* ${arrivalDate}\n` +
+        `*Departure / End Date:* ${departureDate || 'One-way / Not specified'}\n` +
+        `*Passengers:* ${passengers}\n` +
+        `*Pickup Location:* ${pickupLocation || 'Not specified'}\n` +
+        `*Places & Notes:* ${notes || 'None'}`;
+
+      window.open(`https://wa.me/94789385910?text=${encodeURIComponent(rawMessage)}`, '_blank');
+    });
+  </script>
+
+  <!-- Firebase Real-Time Loader & Public Guest Review Submission -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getFirestore, collection, query, orderBy, getDocs, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+    import { firebaseConfig, isFirebaseConfigured } from "./firebase-config.js";
+
+    let db = null;
+    if (isFirebaseConfigured()) {
+      const app = initializeApp(firebaseConfig);
+      db = getFirestore(app);
+    }
+
+    function fileToCompressedDataUrl(file) {
+      return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const maxW = 800;
+            const scale = Math.min(1, maxW / img.width);
+            canvas.width = img.width * scale;
+            canvas.height = img.height * scale;
+            canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+            resolve(canvas.toDataURL('image/jpeg', 0.72));
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function renderReviewCard(item) {
+      const stars = "&#9733;".repeat(Number(item.rating) || 5);
+      return `
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 shadow-sm flex flex-col">
+          ${item.imageUrl ? `<div class="h-48 bg-white border-b border-slate-200 overflow-hidden"><img src="${item.imageUrl}" alt="Guest Review" class="w-full h-full object-contain"></div>` : ''}
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-goldWarm text-base mb-2">${stars}</div>
+              <p class="text-slate-700 text-sm italic leading-relaxed">“${item.comment}”</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/70 flex items-center justify-between text-xs">
+              <span class="font-bold text-emeraldDeep">${item.guestName}</span>
+              <span class="text-slate-500">${item.country || 'Verified Guest'}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTourMemoryCard(item) {
+      return `
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="h-64 overflow-hidden">
+            <img src="${item.imageUrl}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-5 flex-1">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emeraldMain bg-emerald-50 px-2.5 py-1 rounded-full">Guest Tour Memory</span>
+            <h3 class="font-bold text-lg text-emeraldDeep mt-2">${item.title}</h3>
+            <p class="text-sm text-slate-600 mt-1">${item.caption || ''}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    document.getElementById('public-review-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('pub-rev-submit');
+      btn.disabled = true;
+      btn.textContent = "Posting Review...";
+
+      const guestName = document.getElementById('pub-rev-name').value.trim();
+      const country = document.getElementById('pub-rev-country').value.trim();
+      const rating = Number(document.getElementById('pub-rev-rating').value);
+      const comment = document.getElementById('pub-rev-comment').value.trim();
+      const file = document.getElementById('pub-rev-image').files[0];
+
+      try {
+        const imageUrl = file ? await fileToCompressedDataUrl(file) : "";
+        const newReview = { guestName, country, rating, comment, imageUrl };
+
+        if (db) {
+          await addDoc(collection(db, "reviews"), {
+            ...newReview,
+            createdAt: serverTimestamp()
+          });
+        } else {
+          const list = JSON.parse(localStorage.getItem('hzt_demo_reviews') || '[]');
+          list.unshift({ id: Date.now().toString(), ...newReview });
+          localStorage.setItem('hzt_demo_reviews', JSON.stringify(list));
+        }
+
+        document.getElementById('dynamic-reviews-grid').insertAdjacentHTML('afterbegin', renderReviewCard(newReview));
+        e.target.reset();
+        document.getElementById('review-modal').classList.add('hidden');
+        alert("Thank you! Your review has been published on Hiru Zone Tours.");
+      } catch (err) {
+        alert("Could not submit review: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="send" class="w-4 h-4"></i><span>Post My Review</span>`;
+        lucide.createIcons();
+      }
+    });
+
+    async function loadDynamicContent() {
+      const reviewsContainer = document.getElementById('dynamic-reviews-grid');
+      const memoriesContainer = document.getElementById('tour-memories-grid');
+
+      const localReviews = JSON.parse(localStorage.getItem('hzt_demo_reviews') || '[]');
+      const localPhotos = JSON.parse(localStorage.getItem('hzt_demo_photos') || '[]');
+
+      localReviews.forEach(r => reviewsContainer.insertAdjacentHTML('beforeend', renderReviewCard(r)));
+      localPhotos.forEach(p => memoriesContainer.insertAdjacentHTML('afterbegin', renderTourMemoryCard(p)));
+
+      if (!db) return;
+
+      try {
+        const revSnap = await getDocs(query(collection(db, "reviews"), orderBy("createdAt", "desc")));
+        revSnap.forEach(doc => {
+          reviewsContainer.insertAdjacentHTML('beforeend', renderReviewCard(doc.data()));
+        });
+
+        const galSnap = await getDocs(query(collection(db, "gallery"), orderBy("createdAt", "desc")));
+        galSnap.forEach(doc => {
+          memoriesContainer.insertAdjacentHTML('afterbegin', renderTourMemoryCard(doc.data()));
+        });
+      } catch (err) {
+        console.warn("Firebase load skipped:", err);
+      }
+    }
+
+    loadDynamicContent();
+  </script>
+</body>
+</html>

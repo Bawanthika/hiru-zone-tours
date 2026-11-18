@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Hiru Zone Tours</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emeraldDeep: '#032E22',
+            emeraldMain: '#064E3B',
+            goldMain: '#D4AF37',
+            goldLight: '#E5C158',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-slate-100 text-slate-800 min-h-screen">
+
+  <!-- Top Admin Bar -->
+  <header class="bg-emeraldDeep text-white border-b border-goldMain/40 shadow">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="font-serif text-lg font-bold text-goldLight">HIRU ZONE TOURS</span>
+        <span class="text-xs bg-goldMain/20 text-goldLight border border-goldMain/40 px-2.5 py-0.5 rounded-full">Owner Admin Panel</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="text-xs sm:text-sm text-emerald-200 hover:text-goldLight flex items-center gap-1">
+          <i data-lucide="external-link" class="w-4 h-4"></i> View Live Site
+        </a>
+        <button id="logout-btn" class="hidden text-xs bg-red-500/20 hover:bg-red-500/30 text-red-200 px-3 py-1.5 rounded-lg border border-red-400/30">
+          Logout
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mode Banner -->
+  <div id="mode-banner" class="bg-amber-50 border-b border-amber-200 px-4 py-2.5 text-center text-xs text-amber-900">
+    Checking connection mode...
+  </div>
+
+  <!-- ==================== LOGIN SCREEN ==================== -->
+  <main id="login-section" class="max-w-md mx-auto mt-14 px-4">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
+      <div class="w-12 h-12 rounded-full bg-emeraldMain text-goldLight flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="lock" class="w-6 h-6"></i>
+      </div>
+      <h1 class="font-serif text-2xl font-bold text-center text-emeraldDeep">Owner Login</h1>
+      <p class="text-xs text-slate-500 text-center mt-1 mb-6">Sign in to manage guest reviews &amp; tour memories</p>
+
+      <form id="login-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Admin Email</label>
+          <input type="email" id="admin-email" required placeholder="Enter email" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Password</label>
+          <input type="password" id="admin-password" required placeholder="Enter password" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-emeraldMain focus:outline-none">
+        </div>
+        <p id="login-error" class="hidden text-xs text-red-600 font-medium"></p>
+        <button type="submit" class="w-full bg-emeraldMain hover:bg-emeraldDeep text-white font-bold py-3.5 rounded-xl transition">
+          Sign In to Dashboard
+        </button>
+      </form>
+      <p id="demo-hint" class="text-[11px] text-slate-400 text-center mt-4">
+        Local Test Password: <strong class="text-slate-600">hiru2026</strong> (Until Firebase is connected)
+      </p>
+    </div>
+  </main>
+
+  <!-- ==================== ADMIN DASHBOARD ==================== -->
+  <main id="dashboard-section" class="hidden max-w-6xl mx-auto px-4 py-10 space-y-10">
+    
+    <div class="grid lg:grid-cols-2 gap-8">
+      
+      <!-- 1. Add Guest Feedback Form -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="p-2.5 rounded-xl bg-emerald-50 text-emeraldMain">
+            <i data-lucide="message-square-plus" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif text-xl font-bold text-emeraldDeep">Add New Guest Feedback</h2>
+            <p class="text-xs text-slate-500">Upload handwritten feedback form or guest selfie + review</p>
+          </div>
+        </div>
+
+        <form id="review-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Guest Name *</label>
+              <input type="text" id="rev-name" required placeholder="e.g., Sarah & Mark" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Country / Date</label>
+              <input type="text" id="rev-country" placeholder="e.g., UK • Nov 2026" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Feedback Form / Guest Photo</label>
+            <input type="file" id="rev-image" accept="image/*" class="w-full text-sm text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emeraldMain hover:file:bg-emerald-100">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Guest Comment *</label>
+            <textarea id="rev-comment" rows="3" required placeholder="Write the guest's review comment here..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+          </div>
+
+          <button type="submit" id="rev-submit-btn" class="w-full bg-emeraldMain hover:bg-emeraldDeep text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2">
+            <i data-lucide="upload-cloud" class="w-5 h-5"></i>
+            <span>Publish Guest Feedback</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- 2. Add Tour Memory Photo -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="p-2.5 rounded-xl bg-amber-50 text-amber-700">
+            <i data-lucide="image-plus" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif text-xl font-bold text-emeraldDeep">Add Tour Memory Photo</h2>
+            <p class="text-xs text-slate-500">Add guest tour moments &amp; scenic memories to the website</p>
+          </div>
+        </div>
+
+        <form id="photo-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Photo Title *</label>
+            <input type="text" id="gal-title" required placeholder="e.g., Sigiriya Rock Tour Group" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Select Photo *</label>
+            <input type="file" id="gal-image" accept="image/*" required class="w-full text-sm text-slate-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-amber-50 file:text-amber-800 hover:file:bg-amber-100">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Short Description</label>
+            <input type="text" id="gal-caption" placeholder="e.g., 7-day cultural triangle & hill country tour" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+          </div>
+
+          <button type="submit" id="gal-submit-btn" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2">
+            <i data-lucide="image" class="w-5 h-5"></i>
+            <span>Upload Photo to Tour Memories</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- 3. Manage & Delete Guest Reviews -->
+    <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+      <div class="flex items-center justify-between gap-4 mb-5">
+        <div>
+          <h3 class="font-serif text-xl font-bold text-emeraldDeep">Manage Guest Reviews</h3>
+          <p class="text-xs text-slate-500">Includes reviews submitted directly by guests on the website and reviews uploaded by you</p>
+        </div>
+        <button id="refresh-btn" class="inline-flex items-center gap-1.5 text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2 rounded-lg transition">
+          <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> Refresh
+        </button>
+      </div>
+      <div id="manage-reviews-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <p class="text-slate-400">Loading reviews...</p>
+      </div>
+    </div>
+
+    <!-- 4. Manage & Delete Tour Memories Photos -->
+    <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+      <div class="mb-5">
+        <h3 class="font-serif text-xl font-bold text-emeraldDeep">Manage Tour Memories Photos</h3>
+        <p class="text-xs text-slate-500">Delete or manage uploaded guest tour photos</p>
+      </div>
+      <div id="manage-gallery-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <p class="text-slate-400">Loading photos...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script>lucide.createIcons();</script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+    import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+    import { firebaseConfig, isFirebaseConfigured } from "./firebase-config.js";
+
+    const useFirebase = isFirebaseConfigured();
+    const banner = document.getElementById('mode-banner');
+    const loginSection = document.getElementById('login-section');
+    const dashboardSection = document.getElementById('dashboard-section');
+    const logoutBtn = document.getElementById('logout-btn');
+
+    let app, auth, db;
+
+    if (useFirebase) {
+      banner.className = "bg-emerald-50 border-b border-emerald-200 px-4 py-2.5 text-center text-xs text-emerald-900 font-medium";
+      banner.textContent = "Connected to Firebase Cloud (100% Free Spark Plan Sync Active)";
+      document.getElementById('demo-hint').classList.add('hidden');
+      app = initializeApp(firebaseConfig);
+      auth = getAuth(app);
+      db = getFirestore(app);
+
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          showDashboard();
+        } else {
+          showLogin();
+        }
+      });
+    } else {
+      banner.className = "bg-amber-50 border-b border-amber-200 px-4 py-2.5 text-center text-xs text-amber-900";
+      banner.innerHTML = "<strong>Local Preview Mode:</strong> Add your keys in <code>firebase-config.js</code> to sync across devices.";
+      if (sessionStorage.getItem('hzt_demo_logged_in') === 'true') {
+        showDashboard();
+      }
+    }
+
+    function showDashboard() {
+      loginSection.classList.add('hidden');
+      dashboardSection.classList.remove('hidden');
+      logoutBtn.classList.remove('hidden');
+      refreshManageLists();
+    }
+
+    function showLogin() {
+      loginSection.classList.remove('hidden');
+      dashboardSection.classList.add('hidden');
+      logoutBtn.classList.add('hidden');
+    }
+
+    // Login Handler
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('admin-email').value.trim();
+      const password = document.getElementById('admin-password').value;
+      const errEl = document.getElementById('login-error');
+      errEl.classList.add('hidden');
+
+      if (useFirebase) {
+        try {
+          await signInWithEmailAndPassword(auth, email, password);
+        } catch (err) {
+          errEl.textContent = "Invalid email or password.";
+          errEl.classList.remove('hidden');
+        }
+      } else {
+        if (password === 'hiru2026') {
+          sessionStorage.setItem('hzt_demo_logged_in', 'true');
+          showDashboard();
+        } else {
+          errEl.textContent = "Incorrect password. Use 'hiru2026' for local preview.";
+          errEl.classList.remove('hidden');
+        }
+      }
+    });
+
+    // Logout Handler
+    logoutBtn.addEventListener('click', async () => {
+      if (useFirebase) {
+        await signOut(auth);
+      } else {
+        sessionStorage.removeItem('hzt_demo_logged_in');
+        showLogin();
+      }
+    });
+
+    document.getElementById('refresh-btn').addEventListener('click', refreshManageLists);
+
+    // Compress image to fit cleanly inside Free Firestore Database (< 450KB)
+    function fileToCompressedDataUrl(file) {
+      return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const maxW = 800;
+            const scale = Math.min(1, maxW / img.width);
+            canvas.width = img.width * scale;
+            canvas.height = img.height * scale;
+            canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+            resolve(canvas.toDataURL('image/jpeg', 0.72));
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // Submit New Guest Feedback
+    document.getElementById('review-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('rev-submit-btn');
+      btn.disabled = true;
+      btn.textContent = "Publishing...";
+
+      const guestName = document.getElementById('rev-name').value.trim();
+      const country = document.getElementById('rev-country').value.trim();
+      const comment = document.getElementById('rev-comment').value.trim();
+      const file = document.getElementById('rev-image').files[0];
+
+      try {
+        const imageUrl = file ? await fileToCompressedDataUrl(file) : "";
+        if (useFirebase) {
+          await addDoc(collection(db, "reviews"), {
+            guestName, country, comment, imageUrl, rating: 5, createdAt: serverTimestamp()
+          });
+        } else {
+          const list = JSON.parse(localStorage.getItem('hzt_demo_reviews') || '[]');
+          list.unshift({ id: Date.now().toString(), guestName, country, comment, imageUrl, rating: 5 });
+          localStorage.setItem('hzt_demo_reviews', JSON.stringify(list));
+        }
+
+        alert("Guest feedback published to the website!");
+        e.target.reset();
+        refreshManageLists();
+      } catch (err) {
+        alert("Upload failed: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="upload-cloud" class="w-5 h-5"></i><span>Publish Guest Feedback</span>`;
+        lucide.createIcons();
+      }
+    });
+
+    // Submit New Tour Memory Photo
+    document.getElementById('photo-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('gal-submit-btn');
+      btn.disabled = true;
+      btn.textContent = "Uploading...";
+
+      const title = document.getElementById('gal-title').value.trim();
+      const caption = document.getElementById('gal-caption').value.trim();
+      const file = document.getElementById('gal-image').files[0];
+
+      try {
+        const imageUrl = await fileToCompressedDataUrl(file);
+        if (useFirebase) {
+          await addDoc(collection(db, "gallery"), {
+            title, caption, imageUrl, createdAt: serverTimestamp()
+          });
+        } else {
+          const list = JSON.parse(localStorage.getItem('hzt_demo_photos') || '[]');
+          list.unshift({ id: Date.now().toString(), title, caption, imageUrl });
+          localStorage.setItem('hzt_demo_photos', JSON.stringify(list));
+        }
+
+        alert("Photo added to Tour Memories!");
+        e.target.reset();
+        refreshManageLists();
+      } catch (err) {
+        alert("Upload failed: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="image" class="w-5 h-5"></i><span>Upload Photo to Tour Memories</span>`;
+        lucide.createIcons();
+      }
+    });
+
+    // Load & Delete Both Reviews and Gallery Items
+    async function refreshManageLists() {
+      const reviewsContainer = document.getElementById('manage-reviews-list');
+      const galleryContainer = document.getElementById('manage-gallery-list');
+      reviewsContainer.innerHTML = "";
+      galleryContainer.innerHTML = "";
+
+      let reviews = [];
+      let photos = [];
+
+      try {
+        if (useFirebase) {
+          const revSnap = await getDocs(collection(db, "reviews"));
+          revSnap.forEach(d => reviews.push({ id: d.id, ...d.data() }));
+
+          const galSnap = await getDocs(collection(db, "gallery"));
+          galSnap.forEach(d => photos.push({ id: d.id, ...d.data() }));
+        } else {
+          reviews = JSON.parse(localStorage.getItem('hzt_demo_reviews') || '[]');
+          photos = JSON.parse(localStorage.getItem('hzt_demo_photos') || '[]');
+        }
+      } catch (err) {
+        reviewsContainer.innerHTML = `<p class="text-red-500 col-span-full text-xs">Error loading items: ${err.message}</p>`;
+        return;
+      }
+
+      // Render Reviews with Delete Button
+      if (reviews.length === 0) {
+        reviewsContainer.innerHTML = `<p class="text-slate-400 col-span-full">No guest reviews found yet.</p>`;
+      } else {
+        reviews.forEach(rev => {
+          const stars = "&#9733;".repeat(Number(rev.rating) || 5);
+          const card = document.createElement('div');
+          card.className = "border border-slate-200 rounded-xl p-4 flex flex-col justify-between gap-3 bg-slate-50";
+          card.innerHTML = `
+            <div class="flex items-start gap-3">
+              ${rev.imageUrl ? `<img src="${rev.imageUrl}" class="w-14 h-14 rounded-lg object-cover shrink-0 border border-slate-200">` : ''}
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-amber-500 text-xs">${stars}</span>
+                  <span class="text-[10px] text-slate-400 truncate">${rev.country || ''}</span>
+                </div>
+                <h4 class="font-bold text-slate-800 truncate mt-0.5">${rev.guestName || 'Guest'}</h4>
+                <p class="text-xs text-slate-600 line-clamp-2 mt-1">“${rev.comment || ''}”</p>
+              </div>
+            </div>
+            <div class="pt-2 border-t border-slate-200/70 flex justify-end">
+              <button class="delete-rev-btn inline-flex items-center gap-1 text-xs bg-red-100 hover:bg-red-200 text-red-700 font-semibold px-3 py-1.5 rounded-lg transition">
+                <i data-lucide="trash-2" class="w-3.5 h-3.5"></i> Delete Review
+              </button>
+            </div>
+          `;
+          card.querySelector('.delete-rev-btn').addEventListener('click', async () => {
+            if (!confirm(`Are you sure you want to delete the review by "${rev.guestName}"?`)) return;
+            try {
+              if (useFirebase) {
+                await deleteDoc(doc(db, "reviews", rev.id));
+              } else {
+                const updated = JSON.parse(localStorage.getItem('hzt_demo_reviews') || '[]').filter(x => x.id !== rev.id);
+                localStorage.setItem('hzt_demo_reviews', JSON.stringify(updated));
+              }
+              refreshManageLists();
+            } catch (err) {
+              alert("Failed to delete review: " + err.message);
+            }
+          });
+          reviewsContainer.appendChild(card);
+        });
+      }
+
+      // Render Tour Memories Photos with Delete Button
+      if (photos.length === 0) {
+        galleryContainer.innerHTML = `<p class="text-slate-400 col-span-full">No tour memory photos uploaded yet.</p>`;
+      } else {
+        photos.forEach(photo => {
+          const card = document.createElement('div');
+          card.className = "border border-slate-200 rounded-xl p-4 flex items-center justify-between gap-3 bg-slate-50";
+          card.innerHTML = `
+            <div class="flex items-center gap-3 overflow-hidden">
+              ${photo.imageUrl ? `<img src="${photo.imageUrl}" class="w-14 h-14 rounded-lg object-cover shrink-0 border border-slate-200">` : ''}
+              <div class="truncate">
+                <h4 class="font-bold text-slate-800 truncate">${photo.title || 'Tour Photo'}</h4>
+                <p class="text-xs text-slate-500 truncate">${photo.caption || ''}</p>
+              </div>
+            </div>
+            <button class="delete-gal-btn inline-flex items-center gap-1 text-xs bg-red-100 hover:bg-red-200 text-red-700 font-semibold px-3 py-1.5 rounded-lg shrink-0 transition">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i> Delete
+            </button>
+          `;
+          card.querySelector('.delete-gal-btn').addEventListener('click', async () => {
+            if (!confirm(`Delete photo "${photo.title}" from the website?`)) return;
+            try {
+              if (useFirebase) {
+                await deleteDoc(doc(db, "gallery", photo.id));
+              } else {
+                const updated = JSON.parse(localStorage.getItem('hzt_demo_photos') || '[]').filter(x => x.id !== photo.id);
+                localStorage.setItem('hzt_demo_photos', JSON.stringify(updated));
+              }
+              refreshManageLists();
+            } catch (err) {
+              alert("Failed to delete photo: " + err.message);
+            }
+          });
+          galleryContainer.appendChild(card);
+        });
+      }
+
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
