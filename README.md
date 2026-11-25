@@ -1,31 +1,42 @@
-# Hiru Zone Tours Website (with Owner Admin Panel)
+# 🚐 Hiru Zone Tours — Sri Lanka Private Tour & Chauffeur Website
 
-## Folder Structure
+A responsive tourism and private chauffeur booking website built for **Hiru Zone Tours**, featuring curated Sri Lankan tour packages, direct WhatsApp inquiry integration, and a lightweight Firebase-powered owner admin panel.
+
+🌐 **Live Website:** [hiru-zone-tours.vercel.app](https://hiru-zone-tours.vercel.app)
+
+---
+
+## ✨ Key Features
+
+* **Responsive Public Website (`index.html`):** Showcases tour packages, vehicle comfort details, chauffeur profile, and verified traveler reviews across mobile and desktop screens.
+* **Owner Admin Dashboard (`admin.html`):** Enables the business owner to publish new client feedback and update gallery photos without touching code.
+* **Firebase Integration (`firebase-config.js`):** Real-time data storage and retrieval for dynamic testimonials and media updates.
+* **Direct Booking Flow:** Integrated instant inquiry options for international travelers.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript
+* **Backend / Database:** Firebase (Firestore & Storage)
+* **Deployment:** Vercel
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="images/airport-welcome.jpg" width="45%" alt="Airport Welcome Service" />
+  <img src="images/van-exterior.jpg" width="45%" alt="Tour Vehicle" />
+</p>
+
+---
+
+## 📂 Project Structure
+
+```text
 hiru-zone-tours/
-├── index.html           (Main Public Website)
-├── admin.html           (Owner Admin Panel to upload feedbacks & photos without code)
-├── firebase-config.js   (Paste your Firebase project keys here)
-├── README.md
-└── images/
-    ├── hirusha-badge.png
-    ├── hirusha-profile.jpg
-    ├── airport-welcome.jpg
-    ├── van-exterior.jpg
-    ├── van-front-seats.jpg
-    ├── van-passenger-seats.jpg
-    ├── van-luggage.jpg
-    └── feedback-form.jpg
-
-## How to Test Locally Right Now
-1. Extract this ZIP folder.
-2. Open `index.html` in your browser to view the main website.
-3. Click the small **Admin** link in the bottom-right footer (or open `admin.html`).
-4. Sign in with password `hiru2026` to test adding new guest feedback photos or tour photos.
-
-## How to Connect Free Firebase Cloud (For Live Multi-Device Admin Uploads)
-1. Go to https://console.firebase.google.com and create a free project (`hiru-zone-tours`).
-2. Enable **Authentication -> Email/Password** and add an admin user for the client.
-3. Enable **Firestore Database** (Start in production mode, allow read for all, write for authenticated users).
-4. Enable **Storage** (Allow read for all, write for authenticated users).
-5. Register a **Web App** in Project Settings, copy the `firebaseConfig` object, and paste it into `firebase-config.js`.
-6. Deploy to Vercel or Netlify for free!
+├── index.html          # Main public landing page & tour showcase
+├── admin.html          # Owner admin panel for feedback & gallery management
+├── firebase-config.js  # Firebase configuration setup
+└── images/             # Vehicle, service, and destination assets
