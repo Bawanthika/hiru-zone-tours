@@ -23,15 +23,6 @@ A responsive tourism and private chauffeur booking website built for **Hiru Zone
 
 ---
 
-## 📸 Preview
-
-<p align="center">
-  <img src="images/airport-welcome.jpg" width="45%" alt="Airport Welcome Service" />
-  <img src="images/van-exterior.jpg" width="45%" alt="Tour Vehicle" />
-</p>
-
----
-
 ## 📂 Project Structure
 
 ```text
